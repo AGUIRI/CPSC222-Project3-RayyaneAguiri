@@ -30,10 +30,10 @@ const Sidebar = (props) => {
                     <span>About Us</span>
                 </div>
                 <div className="profileImageContainer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGAb43NxZswWRLw9RoxC8YwykXlLy_efq2r674Xj0ffRR3D-0P" alt="" />
+                    <img src="https://ressources.phildar.fr/produits/048644/2333/large/048644_2333_S1.jpg" alt="" />
                 </div>
                 <div className="cardBody">
-                    <p className="personalBio">My name is Rizwan  Khan I am a software developer specialization in Front end developement....:)</p>
+                    <p className="personalBio">My name is Rayyane AGUIRI exchange student in SFU...:)</p>
                 </div>
             </Card>
 
