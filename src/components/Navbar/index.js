@@ -38,7 +38,6 @@ const Navbar = (props) => {
                 <input type="text" className={searchClass} placeholder="Search" />
                 <img onClick={openSearch} className="searchIcon" src={require('../../assets/icons/search.png')} alt="Search" />
             </form>
-            
         </div>
     </div>
    )

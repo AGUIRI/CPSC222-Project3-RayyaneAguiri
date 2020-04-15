@@ -15,25 +15,6 @@ const SideImage = props => {
     );
 }
 
-const ImageGallary = props => (
-        <div className="gallaryPost" style={props.gallaryStyle}>
-                <section style={{ width: props.largeWidth }}>
-                    <div className="mainImageWrapper">
-                        <img src={require('../../blogPostImages/' + props.imagesArray[1])} alt="" />
-                    </div>
-                </section>
-                <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
-                    {
-                        props.imagesArray.map(image => 
-                            <SideImage 
-                                height={props.sideImageHeight}
-                                src={require('../../blogPostImages/' + image)}
-                                alt="" />
-                        )
-                    }
-                </section>
-        </div>
-);
 
 const Home  = props => {
     const gallaryHeight = 450;
@@ -61,4 +42,23 @@ const Home  = props => {
     );
 }
 
+const ImageGallary = props => (
+    <div className="gallaryPost" style={props.gallaryStyle}>
+            <section style={{ width: props.largeWidth }}>
+                <div className="mainImageWrapper">
+                    <img src={require('../../blogPostImages/' + props.imagesArray[1])} alt="" />
+                </div>
+            </section>
+            <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
+                {
+                    props.imagesArray.map(image => 
+                        <SideImage 
+                            height={props.sideImageHeight}
+                            src={require('../../blogPostImages/' + image)}
+                            alt="" />
+                    )
+                }
+            </section>
+    </div>
+);
 export default Home;
